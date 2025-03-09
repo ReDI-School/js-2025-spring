@@ -10,7 +10,7 @@ You can find them here: https://redi-school.github.io/js-2025-spring/
 
 If you want to export the slides as a PDF file, please visit this link instead:
 
-[https://redi-school.github.io/js-2024-speing/?print-pdf](https://redi-school.github.io/js-2024-spring/?print-pdf)
+[https://redi-school.github.io/js-2025-spring/?print-pdf](https://redi-school.github.io/js-2025-spring/?print-pdf)
 
 Then, choose "File - Print" in your browser and choose "Save as PDF".
 
