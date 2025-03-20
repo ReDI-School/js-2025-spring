@@ -150,7 +150,7 @@ What did you try? What did you see?
 
 <!-- .slide: style="font-size:80%" -->
 
-Numbers include entire and decimal numbers. In Javascript, we call them integer and float, respectively.
+Numbers include natural and decimal numbers. In Javascript, we call them integer and float, respectively.
 
 ```
 10, 12, 1.5, 3.5
