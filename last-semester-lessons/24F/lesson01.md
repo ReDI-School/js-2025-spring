@@ -9,6 +9,7 @@ Lesson 1, Thursday, 2024-09-11
 ### Lesson overview
 
 - Introduction to JavaScript
+- Data types
 
 ---
 
