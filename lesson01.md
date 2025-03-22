@@ -39,7 +39,7 @@ Lesson 1, Thursday, 2025-03-20
 
 - Students with growth mindset are likely to learn by a mastery approach, embrace challenges and put in effort to learn
 
-- Setbacks as a necessary part of the learning process (cf. [The Neuroscience of Growth Mindset and Intrinsic Motivation](https://pmc.ncbi.nlm.nih.gov/articles/PMC5836039/) )  
+- Setbacks as a necessary part of the learning process (cf. [The Neuroscience of Growth Mindset and Intrinsic Motivation](https://pmc.ncbi.nlm.nih.gov/articles/PMC5836039/) )
 
 
 ---
@@ -277,6 +277,8 @@ There are some special characters in strings, for example:
 'This is a backslash: \'       // WRONG - escaped '
 ```
 
+---
+
 ### String operators
 
 The addition operator (`+`) can be used to combine (concatenate) two strings:
@@ -345,3 +347,93 @@ Why would we dedicate an entire data type for just two values?
 
 ---
 
+### Comparison operators
+
+We can use `===` and `!==` to test for the equality and inequality of any 2 values in JavaScript.
+
+---
+
+### Comparison operators
+
+- `===` strict equality
+
+```js
+1 === 1 // true
+3 === 10 // false
+
+3 === "Hello" // false
+3 === "3" // false
+
+"Ada" === "Ada" // true
+"Ada" === "Alan" // false
+"Alan" === "alan" // false
+```
+
+---
+
+### Comparison operators
+
+- `!==` strict inequality
+
+```js
+3 !== 5 // true
+3 !== 3 // false
+1 !== "Cookies" // true
+```
+
+---
+
+### Small exercise
+
+<!-- .slide: style="font-size:80%" -->
+
+Use the equality comparison operators to generate boolean values for these questions:
+
+- is your favorite food Pizza?
+- are you 25 years old?
+- is "Friends" your favorite tv series?
+- is 42 your shoe size?
+
+As an example for the first item on this list, my favorite food is Döner:
+
+```js
+"Pizza" === "Döner" // false
+```
+
+---
+
+### Comparison operators
+
+These are operators that we use for numbers:
+
+- `>` greater than
+- `<` less than
+- `>=` greater or equal
+- `<=` less or equal
+
+---
+
+```js
+1 > 0 // true
+1 > 5 // false
+
+10 < 20 // true
+10 < 5 // false
+
+42 >= 40 // true
+42 >= 42 // true
+42 >= 50 // false
+```
+
+---
+
+### Comparison operators
+
+- `===` strict equality
+- `!==` strict inequality
+- `>` greater than
+- `<` less than
+- `>=` greater or equal
+- `<=` less or equal
+
+All of these only return `true` or `false`

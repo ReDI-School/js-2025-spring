@@ -34,7 +34,7 @@ const season = nextDate.getMonth() <= july ? "Spring" : "Fall";
 const template =
 `<!-- .slide: id="lesson${nextLesson}" -->
 
-# Basic Frontend - ${season} ${nextDate.getFullYear()}
+# JavaScript Course - ${season} ${nextDate.getFullYear()}
 
 Lesson ${nextLesson}, ${nextDate.getDay() === 2 ? "Tuesday" : "Thursday"}, ${nextDate.getFullYear()}-${(nextDate.getMonth() + 1).toString().padStart(2, '0')}-${nextDate.getDate().toString().padStart(2, '0')}
 
