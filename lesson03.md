@@ -203,10 +203,10 @@ if (age >= 18 && hasLicense) {
 
 `||`  (OR)
 ```js
-let isRaining = false;
-let hasUmbrella = true;
-if (isRaining || hasUmbrella) {
-    console.log("You're good to go outside!");
+let hasMembership = false;
+let over60 = true;
+if (hasMembership || over60) {
+    console.log("You get a 25% discount on all in-store purchases!");
 }
 ```
 
@@ -272,13 +272,13 @@ if (age >= 18 && age <= 99) {
   document.body.textContent = "Welcome! You can register";
 }
 
-let colour = 'orange';
-if (colour === 'orange' || colour === 'red') {
-  document.body.textContent = "The colour is orange or red";
+let color = 'orange';
+if (color === 'orange' || color === 'red') {
+  document.body.textContent = "The color is orange or red";
 }
 ```
 
-Solution: Second condition is `true`, , so it outputs "The colour is orange or red"
+Solution: Second condition is `true`, , so it outputs "The color is orange or red"
 
 <!-- .element: class="fragment" -->
 
