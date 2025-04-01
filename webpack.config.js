@@ -18,7 +18,7 @@ const config = {
           to: "index.html",
           transform: content => content.toString()
             .replaceAll("https://unpkg.com/reveal.js@^4/", "")
-            .replaceAll("https://unpkg.com/highlight.js/", "")
+            .replaceAll("https://unpkg.com/highlight.js@10/", "")
         },
         { from: "style.css", to: "style.css" },
         { from: "toc.md", to: "toc.md" },
