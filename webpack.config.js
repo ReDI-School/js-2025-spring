@@ -10,14 +10,6 @@ const config = {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
   },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /bookstore/,
-      },
-    ],
-  },
   plugins: [
     new CopyWebpackPlugin({
       patterns: [
