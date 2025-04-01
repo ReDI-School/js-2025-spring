@@ -10,15 +10,23 @@ const config = {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /bookstore/,
+      },
+    ],
+  },
   plugins: [
     new CopyWebpackPlugin({
       patterns: [
-        { 
+        {
           from: "index.html",
           to: "index.html",
           transform: content => content.toString()
             .replaceAll("https://unpkg.com/reveal.js@^4/", "")
-            .replaceAll("https://unpkg.com/highlight.js@10/", "")
+            .replaceAll("https://unpkg.com/highlight.js@10/", ""),
         },
         { from: "style.css", to: "style.css" },
         { from: "toc.md", to: "toc.md" },
@@ -32,12 +40,19 @@ const config = {
         { from: "node_modules/reveal.js/plugin/highlight/highlight.js", to: "plugin/highlight/highlight.js" },
         { from: "node_modules/reveal.js/plugin/zoom/zoom.js", to: "plugin/zoom/zoom.js" },
         { from: "node_modules/reveal.js/plugin/search/search.js", to: "plugin/search/search.js" },
-        { from: "node_modules/reveal.js/dist/theme/fonts", to: "dist/theme/fonts"},
+        { from: "node_modules/reveal.js/dist/theme/fonts", to: "dist/theme/fonts" },
         { from: "node_modules/highlight.js/styles/vs2015.min.css", to: "styles/vs2015.css" },
+        { from: "arrays", to: "arrays" },
+        { from: "bookstore", to: "bookstore" },
+        { from: "functions", to: "functions" },
+        { from: "objects", to: "objects" },
       ],
     }),
   ],
   mode: "production",
+  optimization: {
+    minimize: false,
+  }
 };
 
-module.exports = config
+module.exports = config;
