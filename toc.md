@@ -4,7 +4,7 @@
 2. [Variables](#variables)
 3. [Conditionals](#if)
 4. [Conditional cont.](#lesson4)
-5. [Functions cont.](#functions)
+5. [Functions](#functions)
 
 Direct link to lessons: [1](#lesson1) [2](#lesson2) [3](#lesson3) [4](#lesson4) [5](#lesson5)
 
