@@ -395,7 +395,7 @@ console.log(myInfo.address.country); // "Germany"
 
 ### Bonus Practice
 
-Change the `me` objects in https://raw.githubusercontent.com/ReDI-School/js-berlin-2024-fall/main/objects/index.html
+Change the `me` objects in https://raw.githubusercontent.com/ReDI-School/js-2025-spring/main/objects/index.html
 
 Only change `me` object, nothing else in that file!
 
