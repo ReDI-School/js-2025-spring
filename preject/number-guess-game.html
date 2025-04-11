@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number!</title>
+</head>
+<body>
+    Guess a number between 1 and 100:
+    <input id="userguess" type="number" min="1" max="100" value="0">
+    <button onclick="guess(document.getElementById('userguess').valueAsNumber ?? 0)">Guess</button>
+    <div id="output"></div>
+
+    <script>
+        // This is the number the user has to guess. It's
+        // a random number between 1 and 100
+        let secretNumber = Math.floor(Math.random() * 100) + 1;
+
+        // finish the "guess" function. This function is called
+        // whenever the user makes a new guess.
+        // you can use the "output" function to tell the user
+        // whether their guess was too high, low, or whether
+        // they guessed the correct number.
+        // BONUS1: When the user guessed right, tell them how
+        // often they had to guess to get the right number
+        // BONUS2: After 4 guesses, give the user a hint.
+        // The hint consists of the largest number they guessed
+        // below the secret number and the smallest number they guessed
+        // above the secret number.
+        // Example: The secret number is 50, the user guessed
+        // 25, 3, 99, 10, 51. The hint should say:
+        // "The secret number is between 25 and 51".
+        function guess(userGuess) {
+            console.log("the user guessed: " + userGuess);
+
+            output("TODO");
+        }
+    </script>
+
+    <script>
+        // Call this function to display a text on the web page
+        function output(content) {
+            document.getElementById("output").textContent = content;
+        }
+    </script>
+</body>
+</html>

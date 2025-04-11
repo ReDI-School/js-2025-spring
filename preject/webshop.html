@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+</head>
+<body>
+    <input id="product1" type="number" min="0" value="0" oninput="handleInput()"> Product1
+    <br />
+    <input id="product2" type="number" min="0" value="0" oninput="handleInput()"> Product2
+    <br />
+    Total: <span id="total">0</span> EUR
+
+    <script>
+        let productPrices = {
+            product1: 10,
+            product2: 8
+        }
+
+        function totalPrice(product1Amount, product2Amount) {
+            // TODO - finish the function. You can find the prices
+            // for product 1 and product 2 in the productPrices object
+            // return the total amount that the user needs to pay
+
+            // BONUS1: 10% overall discount on purchases over 50 EUR
+            // BONUS2: An extra discount of 5% on a product if the
+            // amount of that product is greater than 4
+            // Note: Only the product that's ordered more than 4 times
+            // is discounted.
+            // BONUS3: Add 3 EUR shipping cost for orders under 20 EUR
+            // Note: Shipping cost is never discounted.
+            return 0;
+        }
+    </script>
+
+    <script>
+        // IGNORE THIS :)
+        // We will teach you later what this does.
+        function handleInput() {
+            let product1Element = document.getElementById("product1");
+            let product2Element = document.getElementById("product2");
+            let totalElement = document.getElementById("total");
+            let price = totalPrice(product1Element.valueAsNumber ?? 0, product2Element.valueAsNumber ?? 0);
+            totalElement.textContent = price;
+        }
+    </script>
+</body>
+</html>
