@@ -38,6 +38,7 @@ const config = {
         { from: "bookstore", to: "bookstore" },
         { from: "functions", to: "functions" },
         { from: "objects", to: "objects" },
+        { from: "preject", to: "preject" },
       ],
     }),
   ],
