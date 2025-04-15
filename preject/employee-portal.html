@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- User can select employee -->
+    <select id="select-employee" onchange="handleOnchange()">
+        <option value="c0001">Employee # 0001</option>
+        <option value="c0002">Employee # 0002</option>
+        <option value="c0003">Employee # 0003</option>
+    </select>
+    <!-- User can select employee address or phone number -->
+    <select id="select-contact" onchange="handleOnchange()">
+        <option value="address">Address</option>
+        <option value="phone">Phone Number</option>
+    </select>
+    <div id="details">
+        <!-- employee information will be displayed here -->
+    </div>
+
+    <script>
+        // Example Employee information
+
+        // Anna Schreiber
+        // Age: 34
+        // Address: Blumenstraße 22, 80331 München, Bayern
+        // Phone: +49 89 00000001
+
+        // 2. Lukas Weber
+        // Age: 41
+        // Address: Am Stadtpark 5, 20095 Hamburg
+        // Phone: +49 40 00000002
+
+        // 3. Jasmin Koch
+        // Age: 29
+        // Address: Friedrichstraße 120, 10117 Berlin
+        // Phone: +49 30 00000003
+
+        // 4. Tim Neumann
+        // Age: 38
+        // Address: Kölner Straße 88, 40211 Düsseldorf, NRW
+        // Phone: +49 211 00000077
+
+        function getEmployeeInfo(employeeId, contactType) {
+            // Build a simple system to display information of a employee:
+
+            // Example of what will be displayed on the page:
+            // Name: Jane Smith
+            // Age: 27
+            // Contact: +45 7393 000002
+
+            // TODO:
+            // Create three employee objects with properties:
+            //     name (string)
+            //     age (number)
+            //     getContact (function)
+            // Note: The getContact function should accept contactType as an argument to determine whether to return the phone number or address
+            // 
+            // Use the employeeId variable (which will have a value c0001, c0002 or c0003) to determine which object to use
+            // 
+            // Return an object with the properties name (string), age (number), and contact (string).
+        }
+    </script>
+
+    <script>
+        // DO NOT TOUCH!!
+        // This function will display the employee information on the page
+        function handleOnchange() {
+            const employeeId = document.getElementById('select-employee').value;
+            const contactType = document.getElementById('select-contact').value;
+            const info = getEmployeeInfo(employeeId, contactType);
+            displayInformation(info);
+        }
+
+        function displayInformation(info) {
+            const element = document.getElementById('details');
+            if (!info.name) {
+                element.innerHTML = null;
+                return;
+            }
+            element.innerHTML = 'name:' + info.name + '<br>' +
+                'Age: ' + info.age + '<br>' +
+                'Contact: ' + info.contact
+        }
+    </script>
+</body>
+</html>

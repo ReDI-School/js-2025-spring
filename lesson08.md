@@ -40,3 +40,13 @@ The user can enter how many of each products they want to order,
 and your job is to tell the user how much they need to pay.
 
 Link: https://raw.githubusercontent.com/ReDI-School/js-2025-spring/preject/webshop.html
+
+---
+
+### Bonus: Employee Information Portal
+
+You're managing an employee information portal.
+
+The user can view employee details, including phone numbers and addresses.
+
+Link: https://raw.githubusercontent.com/ReDI-School/js-2025-spring/preject/employee-portal.html
