@@ -16,6 +16,7 @@ tag of the HTML file. The second script tag was done by
 your teachers for you, you don't need to touch it.
 
 Bonus: Finish all two options
+
 Bonus Bonus: Finish all the bonus described in the HTML file
 
 ---
