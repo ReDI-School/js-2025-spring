@@ -74,37 +74,21 @@ document.body.appendChild(myDiv);          // 3
 To make it useful, we typically need to:
 1. Add content or attributes such as `textContent`, `id` and `onclick`
 2. Apply styles (optional) e.g `style.backgroundColor`
-3. Append it to the DOM using something like `appendChild()` or `append()`.
+3. Append it to the DOM using `appendChild()`.
 
 ---
 
-### .appendChild() and .append
+### .appendChild()
 
-`appendChild` and `append` are used to add elements to the DOM, that is, to make them appear on the page.
+`appendChild` are used to add elements to the DOM, that is, to make them appear on the page.
 
 ```js
 document.body.appendChild(myDiv);
 ```
 
-`appendChild` and `append` can be called on almost any element.
+`appendChild` can be called on almost any element.
 
 Remember our `<body>` tag in the html? `document.body` refers to that element; it is mostly just like any other HTML element. Everything inside the `<body>` is what the user sees in the browser.
-
----
-
-### .appendChild() vs .append
-
-`appendChild()` only works with Node objects.
-
-`append()` is more flexible and can add elements and text.
-
-```js
-let myDiv = document.createElement("div");
-document.body.append(myDiv); ✅
-document.body.appendChild(myDiv); ✅
-document.body.append('this is a text'); ✅
-document.body.appendChild('this is a text'); ❌ 
-```
 
 ---
 
