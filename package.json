@@ -4,12 +4,12 @@
     "start": "webpack-dev-server --no-client-overlay-warnings"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^13.0.0",
+    "copy-webpack-plugin": "^13.0.1",
     "highlight.js": "^11.11.1",
     "reveal.js": "^5.2.1",
-    "string-replace-loader": "^3.1.0",
-    "webpack": "^5.98.0",
+    "string-replace-loader": "^3.2.0",
+    "webpack": "^5.101.3",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.1"
+    "webpack-dev-server": "^5.2.2"
   }
 }

@@ -1,8 +1,8 @@
-<!-- .slide: id="lesson1" -->
+<!-- .slide: id="²" -->
 
-### JavaScript Course - Spring 2025
+### JavaScript Course - Fall 2025
 
-Lesson 1, Thursday, 2025-03-20
+Lesson 1, Thursday, 2025-09-16
 
 ---
 
@@ -44,7 +44,16 @@ Lesson 1, Thursday, 2025-03-20
 
 ---
 
-![Growth Mindset](images/growth-mindset.jpg) <!-- .element  height="270px" width="430px"-->
+![Growth Mindset](images/growth-mindset.jpg) <!-- .element  height="500px" -->
+
+---
+
+### A note about AI
+
+* Don't overuse it
+* Think first, don't ask for answers
+* Make it help you understand the problem better
+* Use it to explain solutions
 
 
 ---
